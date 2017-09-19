@@ -1,9 +1,0 @@
-spring.datasource.url=jdbc:sqlserver://DBD_DWA1\\DWA1D;databaseName=OperationalAnalytics;
-spring.datasource.username=APP_DMWEB
-spring.datasource.password=UVUxay-vf6R
-spring.datasource.driverClassName=com.microsoft.sqlserver.jdbc.SQLServerDriver
-spring.jpa.show-sql=true
-spring.jpa.hibernate.dialect=org.hibernate.dialect.SQLServer2012Dialect
-server.port = 8090
-
-
