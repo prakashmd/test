@@ -1,0 +1,6 @@
+GitRepositoriesView.GitDirectories=C\:\\Work_directory\\git\\TATREPO;C\:\\Work directory\\git\\TATREPO\\.git;C\:\\Work directory\\git\\TATREPO\\Hello\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\Work_directory\\git\\TATREPO;C\:\\Work directory\\git\\TATREPO\\.git;C\:\\Work directory\\git\\TATREPO\\Hello\\.git;
+RepositorySearchDialogSearchPath=H\:\\git
+core_defaultRepositoryDir=C\:\\Work directory\\git\\TATREPO
+core_preferredMergeStrategy=jgit-default-mergeStrategy
+eclipse.preferences.version=1

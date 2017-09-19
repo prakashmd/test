@@ -1,0 +1,14 @@
+import com.anthem.Account;
+import com.anthem.RiskyAccounts;
+ 
+global RiskyAccounts risky;
+ruleflow-group "helloworldgroup"
+salience 10;
+rule "enoughMoney"
+    when
+    $account : Account( money < 0 )
+    then
+      System.out.println( "Not enough money on the account!");
+      risky.add($account);
+ 
+end

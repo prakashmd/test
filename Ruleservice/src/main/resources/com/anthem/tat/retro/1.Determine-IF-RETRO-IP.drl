@@ -1,0 +1,39 @@
+//created on: Aug 11, 2017
+package com.anthem.tat.retro
+import com.anthem.tat.DTO.*;
+import com.anthem.tat.xom.*;
+
+
+//list any import classes here.
+
+
+
+//declare any global variables here
+
+
+
+ 
+global MemberFactshandlerClient memberservice;
+
+salience 500;
+agenda-group "AuthType"
+no-loop
+lock-on-active
+rule "Determine IF IP Retro"
+    when
+       $member: MemberDTO(memberid!=null);
+     eval(memberservice.determineIfIPRetro($member))
+       
+    then
+        System.out.println("The member is Retro");
+        
+         $member.setAuthType("Retro IP");
+         memberservice.add($member);
+         
+         update($member);
+ 
+end
+
+
+
+

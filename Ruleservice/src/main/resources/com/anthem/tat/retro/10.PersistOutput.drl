@@ -1,0 +1,31 @@
+//created on: Aug 14, 2017
+package com.anthem.tat.retro
+import com.anthem.tat.xom.*;
+//list any import classes here.
+
+
+
+//declare any global variables here
+
+
+global MemberFactshandlerClient memberservice;
+
+salience 95;
+no-loop
+lock-on-active
+agenda-group "AuthType"
+rule "Persist the output"
+
+    when
+       eval(true)
+           then
+        //actions
+        
+        System.out.println("######## List of Retro members ready to persist in DB #######");
+         memberservice.listofRetroIPMembers();
+
+end
+
+
+
+

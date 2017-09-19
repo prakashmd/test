@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+guvnor_loc_template=http\://localhost\:8080/drools-guvnor/org.drools.guvnor.Guvnor/webdav/
+save_passwords=true

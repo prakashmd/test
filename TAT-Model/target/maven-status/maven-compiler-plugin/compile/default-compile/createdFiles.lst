@@ -1,0 +1,7 @@
+com\anthem\tat\factmodel\Claim.class
+com\anthem\tat\DTO\UmvtStatusDTO.class
+com\anthem\tat\factmodel\UmServices.class
+com\anthem\tat\factmodel\Utilization.class
+com\anthem\tat\factmodel\MemberModel.class
+com\anthem\tat\jasonutil\CustomDateSerializer.class
+com\anthem\tat\DTO\MemberDTO.class

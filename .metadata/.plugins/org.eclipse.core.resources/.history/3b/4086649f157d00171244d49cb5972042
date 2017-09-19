@@ -1,0 +1,17 @@
+//created on: Jul 10, 2017
+package rules
+import com.sample.ClaimTest.Claim;
+rule "A stand alone rule"
+
+    when
+        //conditions
+        c : Claim (claimType=='837P' && claimID==1)
+        
+    then
+        //actions
+        System.out.println("The claim received is 837P");
+        update(c);
+       
+
+end
+

@@ -1,0 +1,7 @@
+1501082293185	Rename package 'com.websystique.springmvc.configuration'
+1501082307048	Rename package 'com.websystique.springmvc.controller'
+1501082315631	Rename package 'com.websystique.springmvc.model'
+1501082340777	Rename package 'com.websystique.springmvc.service'
+1501082410981	Rename package 'com.websystique.springmvc'
+1501083626430	Rename type 'HelloWorldConfiguration'
+1501083655818	Rename type 'HelloWorldInitializer'

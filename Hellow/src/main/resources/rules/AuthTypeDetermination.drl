@@ -1,0 +1,29 @@
+//created on: Jul 11, 2017
+package rules
+
+//list any import classes here.
+
+
+
+//declare any global variables here
+
+
+
+
+rule "AuthType Determination"
+
+    when
+        //conditions
+    then
+        //actions
+
+end
+
+rule "Your Second Rule"
+    //include attributes such as "salience" here...
+    when
+        //conditions
+    then
+        //actions
+
+end

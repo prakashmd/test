@@ -1,0 +1,38 @@
+//created on: Aug 11, 2017
+package com.anthem.tat.retro
+import com.anthem.tat.DTO.*;
+import com.anthem.tat.xom.*;
+
+
+
+//list any import classes here.
+
+
+
+//declare any global variables here
+
+
+ 
+global MemberFactshandlerClient memberservice;
+
+salience 95;
+agenda-group "Expedite"
+no-loop
+lock-on-active
+rule "Determine if PreserviceExpedite"
+    when
+      $member: MemberDTO(memberid!=null && (authType=='Preservice IP') && meetexpedite=='Y' && expeditereq=='Y');
+  
+       
+    then
+        System.out.println("The member is Preservice IP Expedite" );
+        
+         $member.setAuthType("Preservice IP Expedite");
+         memberservice.add($member);
+         
+         //update($member);
+         
+            System.out.println("The member is Preservice IP Expedite" +  $member.getAuthType());
+     
+
+end

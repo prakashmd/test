@@ -1,0 +1,145 @@
+//created on: Jul 12, 2017
+package com.anthem.tat.rules
+
+//list any import classes here.
+import org.joda.time.LocalDate;
+import com.anthem.tat.model.Claim;
+
+
+
+//declare any global variables here
+
+global String serviceType;
+global Boolean retro;
+
+function boolean isReceivedDateonAfterEndDate(LocalDate receivedDate,LocalDate endDate)
+{
+
+	if(receivedDate.isAfter(endDate) || receivedDate.equals(endDate))
+{
+		
+		
+		return true;
+
+}
+		else 
+{
+		
+		return false;
+}
+
+}
+
+
+function boolean isReceivedDateoBeforeStartDate(LocalDate receivedDate,LocalDate startDate)
+{
+
+	if(receivedDate.isBefore(startDate))
+{
+		
+		
+		return true;
+
+}
+		else 
+{
+		
+		return false;
+}
+
+}
+
+rule "1.Determine service Type IP" salience 1
+no-loop true
+
+    when
+        //conditions when service Type is IP
+        $claim : Claim(serviceType == "IP");
+       
+        
+    then
+        //actions
+       System.out.println("The claim service type IP");
+        serviceType=serviceType;
+
+end
+
+rule "2.Determine IF Retro" 
+no-loop true
+
+    when
+        //conditions when service Type is IP
+   
+        $claim : Claim (receivedDate!=null && endDate!=null,   
+        $receivedDate : receivedDate, $endDate:endDate)
+     
+        eval(isReceivedDateonAfterEndDate($receivedDate,$endDate));
+         
+  
+    then
+        //actions
+          
+       
+    System.out.println("The Received Date is on or After EndDate Condition  Met!" );
+     $claim.EDITS="RETRO";
+     update($claim);
+    System.out.println("The Auth Type is "+ $claim.EDITS );
+    System.out.println("The Received date is less than Start date received date" + $claim.getReceivedDate()  +  " EndDate " + $claim.getEndDate() );
+
+end
+
+
+rule "3.Determine IF Pre Service" 
+no-loop true
+
+    when
+        //conditions when service Type is IP
+        
+        $claim : Claim (receivedDate!=null && endDate!=null,   
+        $receivedDate : receivedDate, $startDate:startDate)
+     
+        eval(isReceivedDateoBeforeStartDate($receivedDate,$startDate));
+         
+  
+    then
+        //actions
+          System.out.println("The claim is of service type IP");    
+           $claim.EDITS="PRE-SERVICE";
+            update($claim);
+    System.out.println("The Received Date is on or Before StartDate Condition  Met!" );
+    System.out.println("The Auth Type is "+ $claim.EDITS );
+    System.out.println("The Received date is less than Start date received date" + $claim.getReceivedDate()  +  " StartDate " + $claim.getStartDate() );
+
+ 
+end
+
+rule "4.Determine IF Concurrence" 
+no-loop true
+
+    when
+       // $claim : Claim (EDITS.equalsIgnoreCase("PRE-SERVICE") && (EDITS.equalsIgnoreCase("RETRO"))
+         
+    then
+        //actions
+       //   System.out.println("The claim is of service type IP");    
+        //   $claim.EDITS="PRE-SERVICE";
+  //  System.out.println("The Received Date is on or Before StartDate Condition  Met!" );
+   // System.out.println("The Auth Type is "+ $claim.EDITS );
+  //  System.out.println("The Received date is less than Start date received date" + $claim.getReceivedDate()  +  " StartDate " + $claim.getStartDate() );
+
+end
+
+
+
+
+rule "Determine service Type OP"
+    //include attributes such as "salience" here...
+    when
+     $claim : Claim(serviceType == "OP");
+    then
+        //actions
+          //actions
+       System.out.println("The claim is of service type OP");
+        
+
+end

@@ -1,0 +1,26 @@
+//created on: Aug 9, 2017
+package com.sample
+
+//list any import classes here.
+
+
+import com.anthem.Account;
+import com.anthem.RiskyAccounts;
+//declare any global variables here
+
+
+
+global RiskyAccounts risky;
+ruleflow-group "helloworldgroup"
+salience 1;
+rule "Your First Rule"
+
+    when
+	eval(true)
+    then
+    risky.listRiskyAccounts();
+       
+       System.out.println("Output");
+
+end
+

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.anthem.test"/>
+			<item value="com.anthem.tat"/>
+			<item value="TAT-Xom"/>
+		</list>
+		<list key="name">
+			<item value="TAT-Parent"/>
+		</list>
+		<list key="artifactId">
+			<item value="sqlserver"/>
+			<item value="TAT-Parent"/>
+			<item value="TAT-Xom"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.MavenProjectSelectionDialog">
+		<item value="480" key="width"/>
+		<item value="720" key="x"/>
+		<item value="193" key="y"/>
+		<item value="491" key="height"/>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="720" key="x"/>
+		<item value="168" key="y"/>
+		<item value="528" key="height"/>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\AF43847\Downloads\spring-boot-spring-data-jpa-example-application\spring-boot-spring-data-jpa-example-application"/>
+			<item value="C:\Users\AF43847\Downloads\spring-boot-mssqlserver-master\spring-boot-mssqlserver-master"/>
+			<item value="C:\Work_directory\drools\UI\stormpath-spring-boot-jpa-example-master\DBRestservice"/>
+			<item value="C:\Work_directory\drools\UI\DBservice"/>
+			<item value="C:\Work_directory\drools\UI\tut-bookmarks-master\tut-bookmarks-master"/>
+			<item value="C:\Work_directory\drools\UI\Spring4MVCRest"/>
+			<item value="C:\Users\AF43847\.m2\repository\com\anthem\sayhello\sayHello\1.0"/>
+			<item value="C:\Work_directory\drools\UI\JHipster\TATUI"/>
+			<item value="C:\Users\AF43847\Downloads\hello-kie-server-master\hello-kie-server-master"/>
+			<item value="C:\Work directory\git\RulesRepo\evaluation"/>
+			<item value="C:\Work directory\git"/>
+			<item value="C:\Users\AF43847\Downloads\sctrcd-payment-validation-web-master\sctrcd-payment-validation-web-master"/>
+			<item value="C:\Users\AF43847\Downloads\drools-distribution-7.0.0.Final\drools-distribution-7.0.0.Final\examples\sources"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="HelloWorld1"/>
+		</list>
+		<list key="name">
+			<item value="HelloWorld1"/>
+		</list>
+		<list key="artifactId">
+			<item value="HelloWorld1"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\AF43847\EclipseWorkspace\TAT-Parent"/>
+			<item value="C:\Users\AF43847\EclipseWorkspace\"/>
+			<item value="C:\Work_directory\drools\UI\tut-bookmarks-master\tut-bookmarks-master"/>
+			<item value="C:\Users\AF43847\EclipseWorkspace\TAT-PersistenceService"/>
+			<item value="C:\Users\AF43847\EclipseWorkspace\TATModel"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+migrated=true
+predarkestdark.syntaxColoring.bracket.color=216,216,216
+predarkestdark.syntaxColoring.comment.color=153,150,139
+predarkestdark.syntaxColoring.identifier.color=188,173,173
+predarkestdark.syntaxColoring.keyword.color=204,153,255
+predarkestdark.syntaxColoring.numberLiteral.color=240,128,128
+predarkestdark.syntaxColoring.operator.color=237,233,246
+predarkestdark.syntaxColoring.punctuation.color=188,173,173
+predarkestdark.syntaxColoring.regExpLiteral.color=230,255,153
+predarkestdark.syntaxColoring.stringLiteral.color=230,255,153
+predarkestdark.syntaxColoring.todo.color=217,229,119

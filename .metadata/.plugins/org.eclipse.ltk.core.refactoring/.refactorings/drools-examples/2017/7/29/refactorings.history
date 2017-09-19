@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ticketing.dsl&apos; to &apos;TATRuleService/src/main/resources/com.anthem.tat.rules.sample1&apos;&#x0D;&#x0A;- Original project: &apos;drools-examples&apos;&#x0D;&#x0A;- Destination element: &apos;TATRuleService/src/main/resources/com.anthem.tat.rules.sample1&apos;&#x0D;&#x0A;- Original element: &apos;ticketing.dsl&apos;" description="Copy file" destination="=TATRuleService/src\/main\/resources&lt;com.anthem.tat.rules.sample1" element1="src/main/resources/org/drools/examples/troubleticketWithDSL/ticketing.dsl" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1500301489339" units="0" version="1.0"/>
+</session>

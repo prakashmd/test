@@ -1,0 +1,16 @@
+//created on: Jul 13, 2017
+package com.anthem.tat.rules.sample1
+import com.anthem.tat.model.Claim;
+
+//list any import classes here.
+
+expander TestMe.dsl
+ruleflow-group "hello"
+rule "Type Rule"
+    when
+       The Type of claim is "IP"
+    then
+       Log "The claim Type is IP DSL";
+       updateclaimType as IP;
+      
+end

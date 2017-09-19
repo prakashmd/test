@@ -1,0 +1,14 @@
+dialog.BusinessRuleTask.tab=1
+dialog.BusinessRuleTask.x=25
+dialog.BusinessRuleTask.y=25
+dialog.ScriptTask.x=200
+dialog.ScriptTask.y=200
+do.core.validation=true
+eclipse.preferences.version=1
+list.DataInput.expanded=true
+list.DataOutput.expanded=true
+list.Interface.expanded=true
+section.EndEvent.Documentation..expanded=true
+section.Process.Attributes..expanded=true
+section.ScriptTask.Documentation..expanded=true
+section.Task.Documentation..expanded=true

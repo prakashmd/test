@@ -1,0 +1,31 @@
+package com.anthem.tat.ruleservice;
+
+import org.joda.time.LocalDate;
+import org.kie.api.KieServices;
+import org.kie.api.runtime.KieContainer;
+import org.kie.api.runtime.KieSession;
+
+import com.anthem.tat.model.Claim;
+
+public class DroolTest {
+	 public static final void main(String[] args) {
+	        try {
+	            // load up the knowledge base
+		        KieServices ks = KieServices.Factory.get();
+	    	    KieContainer kContainer = ks.getKieClasspathContainer();
+	        	KieSession kSession = kContainer.newKieSession("ksession-rules");
+	
+	            // go !
+	        	Claim claim = new Claim();
+	           claim.setServiceType("IP");
+	           claim.setReceivedDate(new LocalDate("2017-01-03"));
+	           claim.setStartDate(new LocalDate("2017-01-02"));
+	           claim.setEndDate(new LocalDate("2017-01-02"));
+	            kSession.insert(claim);
+	            kSession.fireAllRules();
+	        } catch (Throwable t) {
+	            t.printStackTrace();
+	        }
+	    }
+}
+

@@ -1,0 +1,56 @@
+//created on: Aug 11, 2017
+package com.anthem.tat.retro
+import com.anthem.tat.DTO.*;
+import com.anthem.tat.xom.*;
+
+
+//list any import classes here.
+
+
+
+//declare any global variables here
+
+
+
+ 
+global MemberFactshandlerClient memberservice;
+
+salience 99;
+agenda-group "AuthType"
+no-loop
+lock-on-active
+rule "Determine if IP Pre service"
+    when
+       $member: MemberDTO(memberid!=null);
+     eval(memberservice.determineIfIPPreService($member))
+       
+    then
+        System.out.println("The member is Pre-service");
+        
+         $member.setAuthType("Preservice IP");
+         memberservice.add($member);
+         
+         update($member);
+       
+
+end
+
+
+/*salience 7;
+lock-on-active 
+agenda-group "AuthType"
+rule "Determine if IP Concurrrent"
+    when
+       $member: MemberDTO(memberid!=null && authType!='Retro IP' && authType!='Preservice IP' && (umsvSeqNo!='0' || umsvSeqNo!='1'));
+   
+       
+    then
+        System.out.println("The member is Concurrrent");
+        
+         $member.setAuthType("Concurrent IP");
+         memberservice.add($member);
+         
+         update($member);
+
+end
+*/

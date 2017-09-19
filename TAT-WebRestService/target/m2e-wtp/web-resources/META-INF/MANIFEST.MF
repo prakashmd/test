@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: TAT-WEBRestServices
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: AF43847
+Implementation-Vendor-Id: com.anthem.tat
+Build-Jdk: 1.8.0_45
+Implementation-URL: http://projects.spring.io/spring-boot/TAT-WebRestS
+ ervice/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
